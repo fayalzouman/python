@@ -9,5 +9,14 @@ if second_num == float(second_num) or int(second_num):
 	print first_num
 else:
 	print "Please submit a number"
-operation = raw_input("Choose an operation.")
-if operation 
+operation = raw_input("Choose an operation: add, subtract, multiply or divide.")
+if operation == +:
+	print first_num + second_num
+elif operation == -:
+	print first_num - second_num
+elif operation == *:
+	print first_num * second_num
+elif operation == /:
+	print first_num / second_num
+else:
+	print "Please choose one of the options."
