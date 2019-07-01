@@ -1,23 +1,29 @@
 from math import *
-first_num = raw_input("Write a number:")
-second_num = raw_input("Choose a second number:")
-if first_num == float(first_num) or int(second_num):
-	print first_num
-else:
-	print "Please submit a number"
 
-if second_num == float(second_num) or int(second_num):
-	print first_num
-else:
-	print "Please submit a number"
-operation = raw_input("Please type your operation: add, subtract, multiply or divide.")
-if raw_input("add"):
-	print first_num + second_num
-elif raw_input("subtract"):
-	print first_num - second_num
-elif raw_input("multiply"):
-	print first_num * second_num
-elif raw_input("divide"):
-	print first_num / second_num
-else:
-	print "Please choose one of the options."
+num1 = input("Enter the first number: ")
+num2 = input("Enter the second number: ")
+operation = input("Choose the operation (+, -, /, *)")
+
+if num1.isdigit() and num2.isdigit():
+	if operation == "+":
+		print(int(num1) + int(num2))
+	elif operation == "-":
+		print(int(num1) - int(num2))
+	elif operation == "/":
+		print (int(num1) / int(num2))
+	elif operation == "*":
+		print(int(num1) * int(num2))
+	else: 
+		print("Please print a valid operation")
+else: 
+	print("Please input a valid number")
+
+
+
+
+
+
+
+
+
+
